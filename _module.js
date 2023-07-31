@@ -5878,7 +5878,7 @@ function create_fragment$8(ctx) {
 						}
 					},
 					{
-						"link": { "url": "/", "label": "Groups" }
+						"link": { "url": "/", "label": "Guilds" }
 					},
 					{
 						"link": { "url": "/pricing", "label": "Pricing" }
@@ -5916,7 +5916,7 @@ function create_fragment$8(ctx) {
 						"social_links": []
 					},
 					{
-						"name": "First Principles Thinking",
+						"name": "Flow State",
 						"image": {
 							"alt": "",
 							"url": "https://raqslyrcsntqpaljvpvm.supabase.co/storage/v1/object/public/images/79acbd4e-ba55-4a39-a276-ccc2b92c6d4c/tumblr_f0bbde82dd8f0ae329290108b3415246_cdcc7d8f_1280.jpeg1677109596492"
