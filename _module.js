@@ -5916,7 +5916,7 @@ function create_fragment$8(ctx) {
 						"name": "First Principles Thinking",
 						"image": {
 							"alt": "",
-							"url": "https://raqslyrcsntqpaljvpvm.supabase.co/storage/v1/object/public/images/79acbd4e-ba55-4a39-a276-ccc2b92c6d4c/img-GN6RqZIr6LFA4nP51jlX0.jpeg1685959912698"
+							"url": "https://raqslyrcsntqpaljvpvm.supabase.co/storage/v1/object/public/images/79acbd4e-ba55-4a39-a276-ccc2b92c6d4c/tumblr_f0bbde82dd8f0ae329290108b3415246_cdcc7d8f_1280.jpeg1677109596492"
 						},
 						"title": "",
 						"social_links": []
