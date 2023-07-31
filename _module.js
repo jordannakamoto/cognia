@@ -5955,7 +5955,7 @@ function create_fragment$8(ctx) {
 				heading: "",
 				people: [
 					{
-						"name": "Fermi Problem Solving\n",
+						"name": "Kaizen",
 						"image": {
 							"alt": "",
 							"url": "https://raqslyrcsntqpaljvpvm.supabase.co/storage/v1/object/public/images/79acbd4e-ba55-4a39-a276-ccc2b92c6d4c/img-pUS8JHMSunnGVJGA4Wv03.jpeg1685695804749"
@@ -5964,7 +5964,7 @@ function create_fragment$8(ctx) {
 						"social_links": []
 					},
 					{
-						"name": "Lateral Thinking\n",
+						"name": "Cognitive Biases\n",
 						"image": {
 							"alt": "",
 							"url": "https://raqslyrcsntqpaljvpvm.supabase.co/storage/v1/object/public/images/79acbd4e-ba55-4a39-a276-ccc2b92c6d4c/img-n5o4zduhAbO5901GB6HHr.jpeg1685698716566"
@@ -5973,7 +5973,7 @@ function create_fragment$8(ctx) {
 						"social_links": []
 					},
 					{
-						"name": "Margin of Safety\n",
+						"name": "Margin of Safety",
 						"image": {
 							"alt": "",
 							"url": "https://raqslyrcsntqpaljvpvm.supabase.co/storage/v1/object/public/images/79acbd4e-ba55-4a39-a276-ccc2b92c6d4c/DreamShaper_v7_clear_visible_icon_for_cyber_Guild_crest_made_o_1%20(1).jpg1690771607510"
@@ -5982,7 +5982,7 @@ function create_fragment$8(ctx) {
 						"social_links": []
 					},
 					{
-						"name": "Metacognition\n",
+						"name": "Metacognition",
 						"image": {
 							"alt": "",
 							"url": "https://raqslyrcsntqpaljvpvm.supabase.co/storage/v1/object/public/images/79acbd4e-ba55-4a39-a276-ccc2b92c6d4c/img-dKKY2OUCKX9wzyU7ZPta9.jpeg1685696680805"
