@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="generator" content="Primo" />
+    <!-- HEAD_svelte-du3lun_START -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url("https://unpkg.com/@primo-app/primo@1.3.64/reset.css");
+
+        #page {
+            font-family: system-ui, sans-serif;
+            color: var(--color);
+            line-height: 1.6;
+            font-size: 1rem;
+            background: var(--background);
+        }
+
+        .section-container {
+            max-width: var(--max-width, 1000px);
+            margin: 0 auto;
+            padding: 3rem var(--padding, 1rem);
+        }
+
+        .heading {
+            font-size: 3rem;
+            line-height: 1;
+            font-weight: 700;
+            margin: 0;
+        }
+
+        .button {
+            color: white;
+            background: var(--color-accent);
+            border-radius: 5px;
+            padding: 8px 20px;
+            transition: var(--transition);
+        }
+
+        .button:hover {
+            box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .button.inverted {
+            background: transparent;
+            color: var(--color-accent);
+            border: 2px solid var(--color-accent);
+        }
+    </style><!-- HEAD_svelte-du3lun_END -->
+    <style>
+        .section-container.svelte-1grguq5.svelte-1grguq5 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 1rem;
+            padding-bottom: 1rem
+        }
+
+        .logo.svelte-1grguq5.svelte-1grguq5 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            line-height: 1.2
+        }
+
+        .desktop-nav.svelte-1grguq5.svelte-1grguq5 {
+            display: none;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%
+        }
+
+        .desktop-nav.svelte-1grguq5 nav.svelte-1grguq5 {
+            display: flex;
+            gap: 2rem
+        }
+
+        .desktop-nav.svelte-1grguq5 nav a.link.svelte-1grguq5 {
+            border-color: transparent;
+            transition: border-color 0.1s;
+            font-size: 0.95rem
+        }
+
+        .desktop-nav.svelte-1grguq5 nav a.link.svelte-1grguq5:hover {
+            border-color: initial
+        }
+
+        @media(min-width: 800px) {
+            .desktop-nav.svelte-1grguq5.svelte-1grguq5 {
+                display: flex
+            }
+        }
+
+        .mobile-nav.svelte-1grguq5.svelte-1grguq5 {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            font-weight: 500
+        }
+
+        @media(min-width: 800px) {
+            .mobile-nav.svelte-1grguq5.svelte-1grguq5 {
+                display: none
+            }
+        }
+
+        #popup.svelte-1grguq5.svelte-1grguq5 {
+            font-size: 1.25rem;
+            display: grid;
+            gap: 1rem;
+            position: absolute;
+            text-align: center;
+            background-color: var(--background-color, white);
+            box-shadow: var(--box-shadow, 0px 4px 30px rgba(0, 0, 0, 0.1));
+            border-radius: var(--border-radius);
+            inset: 0.5rem;
+            bottom: initial;
+            padding: 2rem;
+            z-index: 1
+        }
+
+        #popup.svelte-1grguq5 button#close.svelte-1grguq5 {
+            position: absolute;
+            right: 1rem;
+            top: 1rem
+        }
+
+        @import url("https://unpkg.com/modern-normalize@1.1.0/modern-normalize.css");
+
+        header.svelte-160c169.svelte-160c169.svelte-160c169 {
+            border-bottom: 1px solid var(--border-color)
+        }
+
+        .section-container.svelte-160c169.svelte-160c169.svelte-160c169 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 0.75rem;
+            padding-bottom: 0.75rem
+        }
+
+        .desktop-nav.svelte-160c169.svelte-160c169.svelte-160c169 {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1.5rem;
+            width: 100%
+        }
+
+        .desktop-nav.svelte-160c169 .logo.svelte-160c169.svelte-160c169 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            line-height: 1.4;
+            margin-right: 1.5rem;
+            width: 250px
+        }
+
+        .desktop-nav.svelte-160c169 nav.svelte-160c169.svelte-160c169 {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem
+        }
+
+        .desktop-nav.svelte-160c169 nav.svelte-160c169 a.svelte-160c169 {
+            font-size: 1rem;
+            font-weight: 400;
+            display: none
+        }
+
+        .desktop-nav.svelte-160c169 nav a.nav-item.svelte-160c169.svelte-160c169 {
+            border-bottom: 2px solid transparent;
+            transition: border-color 0.1s
+        }
+
+        .desktop-nav.svelte-160c169 nav a.nav-item.svelte-160c169.svelte-160c169:hover {
+            border-color: var(--color-brand)
+        }
+
+        .desktop-nav.svelte-160c169 button#open.svelte-160c169.svelte-160c169 {
+            font-size: 1.5rem;
+            margin-left: auto
+        }
+
+        nav#mobile-nav.svelte-160c169.svelte-160c169.svelte-160c169 {
+            position: absolute;
+            flex-direction: column;
+            text-align: center;
+            background-color: var(--background-color, white);
+            box-shadow: var(--box-shadow);
+            border-radius: var(--border-radius);
+            left: 0.5rem;
+            top: 0.5rem;
+            right: 0.5rem;
+            padding: 2rem;
+            z-index: 2
+        }
+
+        nav#mobile-nav.svelte-160c169 a.svelte-160c169.svelte-160c169 {
+            display: block
+        }
+
+        nav#mobile-nav.svelte-160c169 hr.svelte-160c169.svelte-160c169 {
+            width: 100%
+        }
+
+        nav#mobile-nav.svelte-160c169 .button.svelte-160c169.svelte-160c169 {
+            width: 100%;
+            justify-content: center
+        }
+
+        nav#mobile-nav.svelte-160c169 button#close.svelte-160c169.svelte-160c169 {
+            display: block;
+            position: absolute;
+            right: 1rem;
+            top: 1rem;
+            font-size: 1.5rem
+        }
+
+        @media(min-width: 600px) {
+
+            #open.svelte-160c169.svelte-160c169.svelte-160c169,
+            #mobile-nav.svelte-160c169.svelte-160c169.svelte-160c169 {
+                display: none
+            }
+
+            .desktop-nav.svelte-160c169 nav.svelte-160c169 a.svelte-160c169 {
+                display: inline-block
+            }
+        }
+
+        .content.svelte-z64qd0 img {
+            width: 100%;
+            margin: 2rem 0;
+            box-shadow: var(--box-shadow);
+            border-radius: var(--border-radius)
+        }
+
+        .content.svelte-z64qd0 p {
+            padding: 0.5rem 0;
+            line-height: 1.5
+        }
+
+        .content.svelte-z64qd0 a {
+            text-decoration: underline
+        }
+
+        .content.svelte-z64qd0 h1 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            line-height: 1.2;
+            margin-bottom: 0.5rem
+        }
+
+        .content.svelte-z64qd0 h2 {
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+            line-height: 1.2
+        }
+
+        .content.svelte-z64qd0 h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            line-height: 1.2;
+            margin-top: .5rem
+        }
+
+        .content.svelte-z64qd0 ul {
+            list-style: disc;
+            padding: 0.5rem 0;
+            padding-left: 1.25rem
+        }
+
+        .content.svelte-z64qd0 ol {
+            list-style: decimal;
+            padding: 0.5rem 0;
+            padding-left: 1.25rem
+        }
+
+        .content.svelte-z64qd0 blockquote {
+            padding: 2rem;
+            box-shadow: var(--box-shadow);
+            border-radius: var(--border-radius)
+        }
+
+        ul.cards.svelte-15l3okr.svelte-15l3okr {
+            display: grid;
+            place-items: center;
+            gap: 1rem
+        }
+
+        ul.cards.svelte-15l3okr li.svelte-15l3okr {
+            max-width: 200px;
+            padding: .3rem;
+            border: 1px solid var(--border-color, #eee);
+            border-radius: var(--border-radius)
+        }
+
+        ul.cards.svelte-15l3okr li figure.svelte-15l3okr {
+            display: grid;
+            place-items: center
+        }
+
+        ul.cards.svelte-15l3okr li figure img.svelte-15l3okr {
+            padding-bottom: .8rem;
+            aspect-ratio: 7 / 8;
+            -o-object-fit: cover;
+            object-fit: cover;
+            width: 100%
+        }
+
+        ul.cards.svelte-15l3okr li .info .details.svelte-15l3okr {
+            display: grid;
+            gap: .25rem;
+            text-align: center;
+            margin-bottom: 1rem
+        }
+
+        ul.cards.svelte-15l3okr li .info .details span.name.svelte-15l3okr {
+            font-weight: 600
+        }
+
+        ul.cards.svelte-15l3okr li .info .details span.title.svelte-15l3okr {
+            font-size: 1rem;
+            color: #444
+        }
+
+        ul.cards.svelte-15l3okr li .info .social.svelte-15l3okr {
+            display: flex;
+            justify-content: end;
+            gap: 1.25rem;
+            font-size: 1.5rem;
+            color: var(--color-accent, lightgrey)
+        }
+
+        ul.cards.svelte-15l3okr li .info .social a.svelte-15l3okr {
+            transition: var(--transition, 0.1s transform)
+        }
+
+        ul.cards.svelte-15l3okr li .info .social a.svelte-15l3okr:hover {
+            transform: scale(1.1)
+        }
+
+        @media(min-width: 600px) {
+            ul.cards.svelte-15l3okr.svelte-15l3okr {
+                grid-template-columns: 1fr 1fr
+            }
+        }
+
+        @media(min-width: 1000px) {
+            ul.cards.svelte-15l3okr.svelte-15l3okr {
+                grid-template-columns: 1fr 1fr 1fr 1fr
+            }
+        }
+
+        .section-container.svelte-1bb43vh.svelte-1bb43vh {
+            display: grid;
+            gap: 0.5rem
+        }
+
+        .heading-group.svelte-1bb43vh.svelte-1bb43vh {
+            display: grid;
+            gap: 1rem;
+            place-content: center;
+            text-align: center
+        }
+
+        .heading-group.svelte-1bb43vh .superhead.svelte-1bb43vh {
+            font-family: var(--font-body);
+            color: var(--color-accent);
+            font-size: 0.875rem;
+            font-weight: 500;
+            letter-spacing: 1.5px;
+            text-transform: uppercase
+        }
+
+        .heading-group.svelte-1bb43vh .subheading.svelte-1bb43vh {
+            line-height: 1.3;
+            max-width: 700px;
+            font-weight: 400;
+            margin: 0 auto;
+            margin-bottom: 4rem
+        }
+
+        .tiers.svelte-1bb43vh.svelte-1bb43vh {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            place-items: start;
+            gap: 2rem
+        }
+
+        .tiers.svelte-1bb43vh .tier.svelte-1bb43vh {
+            display: grid;
+            gap: 2rem;
+            border: 1px solid var(--border-color, #eee);
+            border-radius: var(--border-radius);
+            padding: 2.5rem 2rem;
+            width: 100%
+        }
+
+        .tiers.svelte-1bb43vh .tier header.svelte-1bb43vh {
+            display: grid;
+            gap: 0.5rem
+        }
+
+        .tiers.svelte-1bb43vh .tier header .price.svelte-1bb43vh {
+            font-weight: 600;
+            margin-bottom: 1rem
+        }
+
+        .tiers.svelte-1bb43vh .tier header .price span.numerator.svelte-1bb43vh {
+            font-size: 2rem;
+            color: var(--color-brand)
+        }
+
+        .tiers.svelte-1bb43vh .tier header .price span.denominator.svelte-1bb43vh {
+            opacity: 0.8
+        }
+
+        .tiers.svelte-1bb43vh .tier .title.svelte-1bb43vh {
+            color: var(--color);
+            font-size: 1.25rem;
+            border-radius: 2rem;
+            font-weight: 600;
+            justify-self: flex-start;
+            margin-bottom: 0.5rem
+        }
+
+        .tiers.svelte-1bb43vh .tier .description.svelte-1bb43vh {
+            font-size: 0.875rem;
+            line-height: 1.5
+        }
+
+        .tiers.svelte-1bb43vh .tier hr.svelte-1bb43vh {
+            width: 100%;
+            border-color: var(--border-color, #eee)
+        }
+
+        .tiers.svelte-1bb43vh .tier ul.features.svelte-1bb43vh {
+            display: grid;
+            gap: 1rem
+        }
+
+        .tiers.svelte-1bb43vh .tier ul.features li.svelte-1bb43vh {
+            display: flex;
+            align-items: center;
+            gap: .75rem
+        }
+
+        .tiers.svelte-1bb43vh .tier ul.features li .icon.svelte-1bb43vh {
+            color: var(--color-accent, rebeccapurple)
+        }
+
+        .tiers.svelte-1bb43vh .tier ul.features li .item.svelte-1bb43vh {
+            font-size: 0.875rem
+        }
+
+        .tiers.svelte-1bb43vh .tier .button.svelte-1bb43vh {
+            width: 100%;
+            text-align: center;
+            font-size: 1rem
+        }
+
+        .section-container.svelte-i9k4w2.svelte-i9k4w2 {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+            padding-top: 1rem;
+            padding-bottom: 1rem
+        }
+
+        @media(min-width: 600px) {
+            .section-container.svelte-i9k4w2.svelte-i9k4w2 {
+                flex-direction: row
+            }
+        }
+
+        nav.svelte-i9k4w2.svelte-i9k4w2 {
+            display: flex;
+            gap: 1rem;
+            font-size: .875rem
+        }
+
+        nav.svelte-i9k4w2 .link.svelte-i9k4w2 {
+            border-color: transparent
+        }
+
+        nav.svelte-i9k4w2 .link.svelte-i9k4w2:hover {
+            border-color: initial
+        }
+
+        .primo.svelte-i9k4w2.svelte-i9k4w2 {
+            font-weight: 600;
+            font-size: 0.75rem
+        }
+
+        .primo.svelte-i9k4w2 a.svelte-i9k4w2 {
+            text-decoration: underline
+        }
+
+        .social-links.svelte-i9k4w2.svelte-i9k4w2 {
+            display: flex;
+            gap: 1.5rem;
+            font-size: 1.5rem
+        }
+
+        .social-links.svelte-i9k4w2 a.svelte-i9k4w2 {
+            color: var(--color-accent, rebeccapurple);
+            transition: var(--transition, 0.1s transform)
+        }
+
+        .social-links.svelte-i9k4w2 a.svelte-i9k4w2:hover {
+            transform: scale(1.1)
+        }
+    </style>
+</head>
+
+<body id="page">
+
+    <div class="section" id="section-355eb06b">
+        <header class="section-container svelte-1grguq5">
+            <div class="desktop-nav svelte-1grguq5"><a href="/" class="logo svelte-1grguq5"><img src="https://jbbjtodsvhsgjappwopg.supabase.co/storage/v1/object/public/sites/public-library/assets/logoipsum-261 (1).svg" alt=""></a>
+                <nav class="svelte-1grguq5"><a class="link svelte-1grguq5" href="">Home</a><a class="link svelte-1grguq5" href="/">About</a><a class="link svelte-1grguq5" href="/">Contact</a></nav>
+            </div>
+            <div class="mobile-nav svelte-1grguq5"><a href="/" class="logo svelte-1grguq5"><img src="https://jbbjtodsvhsgjappwopg.supabase.co/storage/v1/object/public/sites/public-library/assets/logoipsum-261 (1).svg" alt=""></a>
+                <button id="open" aria-label="Open mobile navigation"></button>
+            </div>
+        </header>
+    </div>
+    <div class="section" id="section-4f747280">
+        <header class="svelte-160c169">
+            <div class="section-container svelte-160c169">
+                <div class="desktop-nav svelte-160c169"><a href="/" class="logo svelte-160c169" style="--size: 8rem;"><img src="https://raqslyrcsntqpaljvpvm.supabase.co/storage/v1/object/public/images/79acbd4e-ba55-4a39-a276-ccc2b92c6d4c/cognialogo.png1690777509775" alt="Logoipsum"></a>
+                    <nav class="svelte-160c169"><a class="nav-item svelte-160c169" href="/bout">About</a><a class="nav-item svelte-160c169" href="/product">Product</a><a class="nav-item svelte-160c169" href="/why">Why</a><a class="nav-item svelte-160c169" href="/pricing">Pricing</a>
+                        <a class="button svelte-160c169" href="/">Sign up</a>
+                        <button id="open" aria-label="Open mobile navigation" class="svelte-160c169"></button>
+                    </nav>
+                </div>
+            </div>
+        </header>
+    </div>
+    <div class="section" id="section-088f83e6">
+        <div class="section">
+            <div class="section-container content svelte-z64qd0"><!-- HTML_TAG_START -->
+                <h1>Models For Great Ideas</h1>
+                <p>Pick up the <em>insights</em> and <em>tools</em> of today's best thinkers in no time. <strong>Cognia</strong> offers micro courses for you to master your mind in areas of productivity, learning, creativity, life design, emotional intelligence, and more. </p><!-- HTML_TAG_END -->
+            </div>
+        </div>
+    </div>
+    <div class="section" id="section-fef5b78f">
+        <section class="section-container svelte-15l3okr">
+            <ul class="cards svelte-15l3okr">
+                <li class="svelte-15l3okr">
+                    <figure class="svelte-15l3okr"><img alt="" src="https://raqslyrcsntqpaljvpvm.supabase.co/storage/v1/object/public/images/79acbd4e-ba55-4a39-a276-ccc2b92c6d4c/1685702198481asdgasdg.png" class="svelte-15l3okr">
+                    </figure>
+                    <div class="info">
+                        <div class="details svelte-15l3okr"><span class="name svelte-15l3okr">Growth Mindset</span>
+                            <span class="title svelte-15l3okr">Embracing the belief that abilities and intelligence can be developed through effort and learning.</span>
+                        </div>
+                        <div class="social svelte-15l3okr"><a href="/" aria-label="duis" class="svelte-15l3okr">
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="svelte-15l3okr">
+                    <figure class="svelte-15l3okr"><img alt="" src="https://raqslyrcsntqpaljvpvm.supabase.co/storage/v1/object/public/images/79acbd4e-ba55-4a39-a276-ccc2b92c6d4c/1685958948838tome1.jpeg" class="svelte-15l3okr">
+                    </figure>
+                    <div class="info">
+                        <div class="details svelte-15l3okr"><span class="name svelte-15l3okr">First Principles Thinking: </span>
+                            <span class="title svelte-15l3okr">Breaking down complex problems into fundamental elements for better understanding and innovative solutions.</span>
+                        </div>
+                        <div class="social svelte-15l3okr"><a href="/" aria-label="enim" class="svelte-15l3okr">
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="svelte-15l3okr">
+                    <figure class="svelte-15l3okr"><img alt="" src="https://raqslyrcsntqpaljvpvm.supabase.co/storage/v1/object/public/images/79acbd4e-ba55-4a39-a276-ccc2b92c6d4c/1685948397398egypt985.jpeg" class="svelte-15l3okr">
+                    </figure>
+                    <div class="info">
+                        <div class="details svelte-15l3okr"><span class="name svelte-15l3okr">Occam's Razor</span>
+                            <span class="title svelte-15l3okr">Preferring simpler explanations or solutions when faced with competing hypotheses.</span>
+                        </div>
+                        <div class="social svelte-15l3okr"><a href="https://linkedin.com" aria-label="Linkedin" class="svelte-15l3okr">
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li class="svelte-15l3okr">
+                    <figure class="svelte-15l3okr"><img alt="" src="https://raqslyrcsntqpaljvpvm.supabase.co/storage/v1/object/public/images/79acbd4e-ba55-4a39-a276-ccc2b92c6d4c/1685963427937cover5_cleanup.png" class="svelte-15l3okr">
+                    </figure>
+                    <div class="info">
+                        <div class="details svelte-15l3okr"><span class="name svelte-15l3okr">Pareto Principle (80/20 Rule)</span>
+                            <span class="title svelte-15l3okr">Recognizing that a significant portion of outcomes (80%) often comes from a small portion of inputs (20%).</span>
+                        </div>
+                        <div class="social svelte-15l3okr"><a href="/" aria-label="ut" class="svelte-15l3okr">
+                            </a><a href="/" aria-label="aute" class="svelte-15l3okr">
+                            </a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </div>
+    <div class="section" id="section-4594c797">
+        <section class="svelte-1bb43vh">
+            <div class="section-container svelte-1bb43vh">
+                <div class="heading-group svelte-1bb43vh"><span class="superhead svelte-1bb43vh">Pricing</span>
+                    <h2 class="heading">There's a plan for everyone.</h2>
+                    <h3 class="subheading svelte-1bb43vh">Gift the gift of knowledge to yourself or to a friend.</h3>
+                </div>
+                <div class="tiers svelte-1bb43vh">
+                    <div class="tier svelte-1bb43vh">
+                        <header class="svelte-1bb43vh">
+                            <div class="price svelte-1bb43vh"><span class="numerator svelte-1bb43vh">$15</span>
+                                <span class="denominator svelte-1bb43vh">/month</span>
+                            </div>
+                            <h3 class="title svelte-1bb43vh">Individual</h3>
+                            <span class="description svelte-1bb43vh"><!-- HTML_TAG_START -->
+                                <p>Perfect for life-long learners</p><!-- HTML_TAG_END -->
+                            </span>
+                        </header>
+                        <hr class="svelte-1bb43vh">
+                        <ul class="features svelte-1bb43vh">
+                            <li class="svelte-1bb43vh"><span class="icon svelte-1bb43vh"></span>
+                                <span class="item svelte-1bb43vh">Core Library</span>
+                            </li>
+                            <li class="svelte-1bb43vh"><span class="icon svelte-1bb43vh"></span>
+                                <span class="item svelte-1bb43vh">LauraBot Goal Assistant App</span>
+                            </li>
+                        </ul>
+                        <a href="/" class="button svelte-1bb43vh">Get Started</a>
+                    </div>
+                    <div class="tier svelte-1bb43vh">
+                        <header class="svelte-1bb43vh">
+                            <div class="price svelte-1bb43vh"><span class="numerator svelte-1bb43vh">$25</span>
+                                <span class="denominator svelte-1bb43vh">/month</span>
+                            </div>
+                            <h3 class="title svelte-1bb43vh">Professional</h3>
+                            <span class="description svelte-1bb43vh"><!-- HTML_TAG_START -->
+                                <p>Gain the knowledge you need to excel and achieve your goals.</p><!-- HTML_TAG_END -->
+                            </span>
+                        </header>
+                        <hr class="svelte-1bb43vh">
+                        <ul class="features svelte-1bb43vh">
+                            <li class="svelte-1bb43vh"><span class="icon svelte-1bb43vh"></span>
+                                <span class="item svelte-1bb43vh">Access to Business Library</span>
+                            </li>
+                            <li class="svelte-1bb43vh"><span class="icon svelte-1bb43vh"></span>
+                                <span class="item svelte-1bb43vh">Access to Authors Workshops</span>
+                            </li>
+                            <li class="svelte-1bb43vh"><span class="icon svelte-1bb43vh"></span>
+                                <span class="item svelte-1bb43vh">Mastermind Group</span>
+                            </li>
+                        </ul>
+                        <a href="/" class="button svelte-1bb43vh">Get Started</a>
+                    </div>
+                    <div class="tier svelte-1bb43vh">
+                        <header class="svelte-1bb43vh">
+                            <div class="price svelte-1bb43vh"><span class="numerator svelte-1bb43vh">Inquire</span>
+                                <span class="denominator svelte-1bb43vh"></span>
+                            </div>
+                            <h3 class="title svelte-1bb43vh">Elite</h3>
+                            <span class="description svelte-1bb43vh"><!-- HTML_TAG_START -->
+                                <p>Our coaches in your pocket for live mentorships and a custom plan for your project or business.</p><!-- HTML_TAG_END -->
+                            </span>
+                        </header>
+                        <hr class="svelte-1bb43vh">
+                        <ul class="features svelte-1bb43vh">
+                            <li class="svelte-1bb43vh"><span class="icon svelte-1bb43vh"></span>
+                                <span class="item svelte-1bb43vh">Personalized content or services</span>
+                            </li>
+                            <li class="svelte-1bb43vh"><span class="icon svelte-1bb43vh"></span>
+                                <span class="item svelte-1bb43vh">Trainings and Advisory from our Network</span>
+                            </li>
+                        </ul>
+                        <a href="/" class="button svelte-1bb43vh">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="section" id="section-33e09c0c">
+        <footer class="section-container svelte-i9k4w2">
+            <nav class="svelte-i9k4w2"><a class="link svelte-i9k4w2" href="https://primosites.vercel.app/theme-minimal">Copyright 2023</a></nav>
+            <span class="primo svelte-i9k4w2"><a href="https://primo.so" class="svelte-i9k4w2">Primo</a> Powered </span>
+            <div class="social-links svelte-i9k4w2"><a href="/" aria-label="Twitter" class="svelte-i9k4w2"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="1em" height="1em" viewBox="0 0 24 24" class="iconify iconify--mdi"><!-- HTML_TAG_START -->
+                        <path fill="currentColor" d="M22.46 6c-.77.35-1.6.58-2.46.69c.88-.53 1.56-1.37 1.88-2.38c-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29c0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15c0 1.49.75 2.81 1.91 3.56c-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07a4.28 4.28 0 0 0 4 2.98a8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21C16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56c.84-.6 1.56-1.36 2.14-2.23Z" /><!-- HTML_TAG_END -->
+                    </svg>
+                </a><a href="/" aria-label="Linkedin" class="svelte-i9k4w2"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden role="img" width="1em" height="1em" viewBox="0 0 24 24" class="iconify iconify--mdi"><!-- HTML_TAG_START -->
+                        <path fill="currentColor" d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77Z" /><!-- HTML_TAG_END -->
+                    </svg>
+                </a></div>
+        </footer>
+    </div>
+
+    <script type="module">
+        const path = window.location.pathname === '/' ? '' : window.location.pathname
+        const [{
+            default: App
+        }] = await Promise.all([
+            import(path + '/_module.js')
+        ]).catch(e => console.error(e))
+        new App({
+            target: document.querySelector('body'),
+            hydrate: true,
+        })
+    </script>
+</body>
+
+</html>
