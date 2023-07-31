@@ -5878,6 +5878,9 @@ function create_fragment$8(ctx) {
 						}
 					},
 					{
+						"link": { "url": "/", "label": "Groups" }
+					},
+					{
 						"link": { "url": "/pricing", "label": "Pricing" }
 					}
 				],
