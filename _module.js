@@ -5413,11 +5413,7 @@ function create_fragment$7(ctx) {
 						"link": { "url": "/pricing", "label": "Pricing" }
 					}
 				],
-				cta: [
-					{
-						"link": { "url": "/", "label": "Sign up" }
-					}
-				]
+				cta: []
 			}
 		});
 
