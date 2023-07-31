@@ -3904,7 +3904,7 @@ function create_each_block$1(ctx) {
 function create_fragment$3(ctx) {
 	let div;
 	let header;
-	let h1;
+	let h3;
 	let t0;
 	let t1;
 	let span;
@@ -3916,7 +3916,7 @@ function create_fragment$3(ctx) {
 		c() {
 			div = element("div");
 			header = element("header");
-			h1 = element("h1");
+			h3 = element("h3");
 			t0 = text(/*heading*/ ctx[0]);
 			t1 = space();
 			span = element("span");
@@ -3930,10 +3930,10 @@ function create_fragment$3(ctx) {
 			var div_nodes = children(div);
 			header = claim_element(div_nodes, "HEADER", { class: true });
 			var header_nodes = children(header);
-			h1 = claim_element(header_nodes, "H1", { class: true });
-			var h1_nodes = children(h1);
-			t0 = claim_text(h1_nodes, /*heading*/ ctx[0]);
-			h1_nodes.forEach(detach);
+			h3 = claim_element(header_nodes, "H3", { class: true });
+			var h3_nodes = children(h3);
+			t0 = claim_text(h3_nodes, /*heading*/ ctx[0]);
+			h3_nodes.forEach(detach);
 			t1 = claim_space(header_nodes);
 			span = claim_element(header_nodes, "SPAN", { class: true });
 			var span_nodes = children(span);
@@ -3946,7 +3946,7 @@ function create_fragment$3(ctx) {
 			this.h();
 		},
 		h() {
-			attr(h1, "class", "heading svelte-1ney8yj");
+			attr(h3, "class", "heading svelte-1ney8yj");
 			attr(span, "class", "subheading svelte-1ney8yj");
 			attr(header, "class", "section-container svelte-1ney8yj");
 			attr(div, "class", "section");
@@ -3955,8 +3955,8 @@ function create_fragment$3(ctx) {
 		m(target, anchor) {
 			insert_hydration(target, div, anchor);
 			append_hydration(div, header);
-			append_hydration(header, h1);
-			append_hydration(h1, t0);
+			append_hydration(header, h3);
+			append_hydration(h3, t0);
 			append_hydration(header, t1);
 			append_hydration(header, span);
 			append_hydration(span, t2);
@@ -5890,7 +5890,7 @@ function create_fragment$8(ctx) {
 
 	component_2 = new Component$3({
 			props: {
-				heading: "Models For Great Ideas",
+				heading: "+Mind Skills",
 				subheading: "Pick up the insights and tools of today's best thinkers in no time.\n\nCognia's micro courses help you master your mind in areas of productivity, learning, creativity, life design, emotional intelligence, and more.\n\n",
 				buttons: [
 					{
