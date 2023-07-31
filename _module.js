@@ -5445,7 +5445,7 @@ function create_fragment$7(ctx) {
 							"url": "https://raqslyrcsntqpaljvpvm.supabase.co/storage/v1/object/public/images/79acbd4e-ba55-4a39-a276-ccc2b92c6d4c/1685702198481asdgasdg.png",
 							"size": 307
 						},
-						"title": "Embracing the belief that abilities and intelligence can be developed through effort and learning.",
+						"title": "",
 						"social_links": []
 					},
 					{
@@ -5456,7 +5456,7 @@ function create_fragment$7(ctx) {
 							"url": "https://raqslyrcsntqpaljvpvm.supabase.co/storage/v1/object/public/images/79acbd4e-ba55-4a39-a276-ccc2b92c6d4c/1685958948838tome1.jpeg",
 							"size": 58
 						},
-						"title": "Breaking down complex problems into fundamental elements for better understanding and innovative solutions.",
+						"title": "",
 						"social_links": []
 					},
 					{
@@ -5467,7 +5467,7 @@ function create_fragment$7(ctx) {
 							"url": "https://raqslyrcsntqpaljvpvm.supabase.co/storage/v1/object/public/images/79acbd4e-ba55-4a39-a276-ccc2b92c6d4c/1685948397398egypt985.jpeg",
 							"size": 32
 						},
-						"title": "Preferring simpler explanations or solutions when faced with competing hypotheses.",
+						"title": "",
 						"social_links": []
 					},
 					{
@@ -5478,7 +5478,7 @@ function create_fragment$7(ctx) {
 							"url": "https://raqslyrcsntqpaljvpvm.supabase.co/storage/v1/object/public/images/79acbd4e-ba55-4a39-a276-ccc2b92c6d4c/1685963427937cover5_cleanup.png",
 							"size": 407
 						},
-						"title": "Recognizing that a significant portion of outcomes (80%) often comes from a small portion of inputs (20%).",
+						"title": "",
 						"social_links": []
 					}
 				]
