@@ -6008,8 +6008,8 @@ function create_fragment$a(ctx) {
 	component_5 = new Component$6({
 			props: {
 				content: {
-					"html": "<h1>Designed for real-world applications</h1><p>The information featured on Cognia is curated so you can learn the most applicable mental models, habits and strategies to think at a high level.</p><h3>Audio</h3><p>Every micro lesson is accompanied by a professional audio recording, so you can listen to Cognia on your commute or absorb information passively.</p><h3>Lab Tested</h3><p>Andrew Hubermann</p>",
-					"markdown": "# Designed for real-world applications\n\nThe information featured on Cognia is curated so you can learn the most applicable mental models, habits and strategies to think at a high level.\n\n### Audio\n\nEvery micro lesson is accompanied by a professional audio recording, so you can listen to Cognia on your commute or absorb information passively.\n\n### Lab Tested\n\nAndrew Hubermann\n\n"
+					"html": "<h1>Designed for real-world applications</h1><p>The information featured on Cognia is curated so you can learn the most applicable mental models, habits and strategies to think at a high level.</p><h3>🔊 Audio</h3><p>Every micro lesson is accompanied by a professional audio recording, so you can listen to Cognia on your commute or absorb information passively.</p><h3>🧪 Lab Tested</h3><p>Andrew Hubermann</p>",
+					"markdown": "# Designed for real-world applications\n\nThe information featured on Cognia is curated so you can learn the most applicable mental models, habits and strategies to think at a high level.\n\n### 🔊 Audio\n\nEvery micro lesson is accompanied by a professional audio recording, so you can listen to Cognia on your commute or absorb information passively.\n\n### 🧪 Lab Tested\n\nAndrew Hubermann\n\n"
 				}
 			}
 		});
