@@ -276,74 +276,70 @@
             }
         }
 
-        ul.cards.svelte-15l3okr.svelte-15l3okr {
-            display: grid;
-            place-items: center;
-            gap: 1rem
+        section.svelte-1qk24ik.svelte-1qk24ik {
+            background: var(--color-brand);
+            overflow: hidden
         }
 
-        ul.cards.svelte-15l3okr li.svelte-15l3okr {
-            max-width: 200px;
-            padding: .3rem;
-            border: 1px solid var(--border-color, #eee);
-            border-radius: var(--border-radius)
+        section.image-left.svelte-1qk24ik figure.svelte-1qk24ik {
+            grid-column: 1;
+            grid-row: 1
         }
 
-        ul.cards.svelte-15l3okr li figure.svelte-15l3okr {
-            display: grid;
-            place-items: center
+        section.image-left.svelte-1qk24ik .body.svelte-1qk24ik {
+            grid-column: 2
         }
 
-        ul.cards.svelte-15l3okr li figure img.svelte-15l3okr {
-            padding-bottom: .8rem;
-            aspect-ratio: 7 / 8;
-            -o-object-fit: cover;
-            object-fit: cover;
-            width: 100%
-        }
-
-        ul.cards.svelte-15l3okr li .info .details.svelte-15l3okr {
-            display: grid;
-            gap: .25rem;
-            text-align: center;
-            margin-bottom: 1rem
-        }
-
-        ul.cards.svelte-15l3okr li .info .details span.name.svelte-15l3okr {
-            font-weight: 600
-        }
-
-        ul.cards.svelte-15l3okr li .info .details span.title.svelte-15l3okr {
-            font-size: 1rem;
-            color: #444
-        }
-
-        ul.cards.svelte-15l3okr li .info .social.svelte-15l3okr {
+        .section-container.svelte-1qk24ik.svelte-1qk24ik {
             display: flex;
-            justify-content: end;
-            gap: 1.25rem;
-            font-size: 1.5rem;
-            color: var(--color-accent, lightgrey)
+            flex-direction: column-reverse;
+            gap: 2rem
         }
 
-        ul.cards.svelte-15l3okr li .info .social a.svelte-15l3okr {
-            transition: var(--transition, 0.1s transform)
-        }
-
-        ul.cards.svelte-15l3okr li .info .social a.svelte-15l3okr:hover {
-            transform: scale(1.1)
-        }
-
-        @media(min-width: 600px) {
-            ul.cards.svelte-15l3okr.svelte-15l3okr {
-                grid-template-columns: 1fr 1fr
+        @media(min-width: 800px) {
+            .section-container.svelte-1qk24ik.svelte-1qk24ik {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                place-items: center;
+                gap: 6rem;
+                padding-block: 6rem
             }
         }
 
-        @media(min-width: 1000px) {
-            ul.cards.svelte-15l3okr.svelte-15l3okr {
-                grid-template-columns: 1fr 1fr 1fr 1fr
-            }
+        .body.svelte-1qk24ik.svelte-1qk24ik {
+            color: var(--color-inverted);
+            display: grid;
+            place-items: start;
+            padding-top: 2rem
+        }
+
+        .body.svelte-1qk24ik .headline.svelte-1qk24ik {
+            font-family: var(--font-heading);
+            font-weight: 700;
+            font-size: clamp(2.75rem, 10vw, 3rem);
+            line-height: 1.1;
+            margin-bottom: 1.5rem
+        }
+
+        .body.svelte-1qk24ik .subheading.svelte-1qk24ik {
+            font-weight: 400;
+            font-size: 1.125rem;
+            line-height: 1.5;
+            margin-bottom: 2rem
+        }
+
+        .body.svelte-1qk24ik .button.svelte-1qk24ik {
+            font-weight: 500
+        }
+
+        figure.svelte-1qk24ik.svelte-1qk24ik {
+            position: relative
+        }
+
+        figure.svelte-1qk24ik img.svelte-1qk24ik {
+            border-radius: var(--border-radius);
+            z-index: 1;
+            position: relative
         }
 
         .section-container.svelte-1bb43vh.svelte-1bb43vh {
@@ -583,55 +579,16 @@
             </ul>
         </section>
     </div>
-    <div class="section" id="section-2a9325fc">
-        <section class="section-container svelte-15l3okr">
-            <ul class="cards svelte-15l3okr">
-                <li class="svelte-15l3okr">
-                    <figure class="svelte-15l3okr"><img alt="" src="https://raqslyrcsntqpaljvpvm.supabase.co/storage/v1/object/public/images/79acbd4e-ba55-4a39-a276-ccc2b92c6d4c/img-pUS8JHMSunnGVJGA4Wv03.jpeg1685695804749" class="svelte-15l3okr">
-                    </figure>
-                    <div class="info">
-                        <div class="details svelte-15l3okr"><span class="name svelte-15l3okr">Kaizen</span>
-                            <span class="title svelte-15l3okr"></span>
-                        </div>
-                        <div class="social svelte-15l3okr">
-                        </div>
-                    </div>
-                </li>
-                <li class="svelte-15l3okr">
-                    <figure class="svelte-15l3okr"><img alt="" src="https://raqslyrcsntqpaljvpvm.supabase.co/storage/v1/object/public/images/79acbd4e-ba55-4a39-a276-ccc2b92c6d4c/img-n5o4zduhAbO5901GB6HHr.jpeg1685698716566" class="svelte-15l3okr">
-                    </figure>
-                    <div class="info">
-                        <div class="details svelte-15l3okr"><span class="name svelte-15l3okr">Cognitive Biases
-                            </span>
-                            <span class="title svelte-15l3okr"></span>
-                        </div>
-                        <div class="social svelte-15l3okr">
-                        </div>
-                    </div>
-                </li>
-                <li class="svelte-15l3okr">
-                    <figure class="svelte-15l3okr"><img alt="" src="https://raqslyrcsntqpaljvpvm.supabase.co/storage/v1/object/public/images/79acbd4e-ba55-4a39-a276-ccc2b92c6d4c/DreamShaper_v7_clear_visible_icon_for_cyber_Guild_crest_made_o_1%20(1).jpg1690771607510" class="svelte-15l3okr">
-                    </figure>
-                    <div class="info">
-                        <div class="details svelte-15l3okr"><span class="name svelte-15l3okr">Margin of Safety</span>
-                            <span class="title svelte-15l3okr"></span>
-                        </div>
-                        <div class="social svelte-15l3okr">
-                        </div>
-                    </div>
-                </li>
-                <li class="svelte-15l3okr">
-                    <figure class="svelte-15l3okr"><img alt="" src="https://raqslyrcsntqpaljvpvm.supabase.co/storage/v1/object/public/images/79acbd4e-ba55-4a39-a276-ccc2b92c6d4c/img-dKKY2OUCKX9wzyU7ZPta9.jpeg1685696680805" class="svelte-15l3okr">
-                    </figure>
-                    <div class="info">
-                        <div class="details svelte-15l3okr"><span class="name svelte-15l3okr">Metacognition</span>
-                            <span class="title svelte-15l3okr"></span>
-                        </div>
-                        <div class="social svelte-15l3okr">
-                        </div>
-                    </div>
-                </li>
-            </ul>
+    <div class="section" id="section-99dbfa00">
+        <section class="svelte-1qk24ik">
+            <div class="section-container svelte-1qk24ik">
+                <div class="body svelte-1qk24ik">
+                    <h1 class="headline svelte-1qk24ik">Track Your Progress</h1>
+                    <div class="subheading svelte-1qk24ik">Feature your journey on your own profile. Complete with your favorite quotes, authors, thinkers, and ideas.</div>
+                    <a href="/" class="button svelte-1qk24ik">Get Started</a>
+                </div>
+                <figure class="svelte-1qk24ik"><img src="https://cdn.dribbble.com/userupload/4095498/file/original-9d1e3625c6f08df5980d01ac7386590e.png?resize=2048x1536" alt="" class="svelte-1qk24ik"></figure>
+            </div>
         </section>
     </div>
     <div class="section" id="section-4594c797">
