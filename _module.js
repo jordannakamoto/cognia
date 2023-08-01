@@ -5917,7 +5917,7 @@ function create_fragment$8(ctx) {
 						"name": "Flow State",
 						"image": {
 							"alt": "",
-							"url": "https://raqslyrcsntqpaljvpvm.supabase.co/storage/v1/object/public/images/79acbd4e-ba55-4a39-a276-ccc2b92c6d4c/tumblr_f0bbde82dd8f0ae329290108b3415246_cdcc7d8f_1280.jpeg1677109596492"
+							"url": "https://raqslyrcsntqpaljvpvm.supabase.co/storage/v1/object/public/images/79acbd4e-ba55-4a39-a276-ccc2b92c6d4c/DreamShaper_v7_Matte_Glass_Vector_Graphic_of_Mini_Course_icon_0.jpg1690889370883"
 						},
 						"title": "",
 						"social_links": []
@@ -5926,9 +5926,7 @@ function create_fragment$8(ctx) {
 						"name": "Occam's Razor",
 						"image": {
 							"alt": "",
-							"src": "https://raqslyrcsntqpaljvpvm.supabase.co/storage/v1/object/public/images/79acbd4e-ba55-4a39-a276-ccc2b92c6d4c/1685948397398egypt985.jpeg",
-							"url": "https://raqslyrcsntqpaljvpvm.supabase.co/storage/v1/object/public/images/79acbd4e-ba55-4a39-a276-ccc2b92c6d4c/1685948397398egypt985.jpeg",
-							"size": 32
+							"url": "https://raqslyrcsntqpaljvpvm.supabase.co/storage/v1/object/public/images/79acbd4e-ba55-4a39-a276-ccc2b92c6d4c/DreamShaper_v7_Matte_Glass_Vector_Graphic_of_Mini_Course_icon_0.webp1690889462351"
 						},
 						"title": "",
 						"social_links": []
