@@ -4748,10 +4748,10 @@ function get_each_context$3(ctx, list, i) {
 	return child_ctx;
 }
 
-// (55:2) {#if buttons.length > 0}
+// (54:2) {#if buttons.length > 0}
 function create_if_block$5(ctx) {
 	let div;
-	let each_value = /*buttons*/ ctx[2];
+	let each_value = /*buttons*/ ctx[1];
 	let each_blocks = [];
 
 	for (let i = 0; i < each_value.length; i += 1) {
@@ -4780,7 +4780,7 @@ function create_if_block$5(ctx) {
 			this.h();
 		},
 		h() {
-			attr(div, "class", "buttons svelte-vlyog6");
+			attr(div, "class", "buttons svelte-1k550y1");
 		},
 		m(target, anchor) {
 			insert_hydration(target, div, anchor);
@@ -4792,8 +4792,8 @@ function create_if_block$5(ctx) {
 			}
 		},
 		p(ctx, dirty) {
-			if (dirty & /*buttons*/ 4) {
-				each_value = /*buttons*/ ctx[2];
+			if (dirty & /*buttons*/ 2) {
+				each_value = /*buttons*/ ctx[1];
 				let i;
 
 				for (i = 0; i < each_value.length; i += 1) {
@@ -4822,7 +4822,7 @@ function create_if_block$5(ctx) {
 	};
 }
 
-// (57:6) {#each buttons as button, i}
+// (56:6) {#each buttons as button, i}
 function create_each_block$3(ctx) {
 	let a;
 	let t_value = /*button*/ ctx[3].link.label + "";
@@ -4843,7 +4843,7 @@ function create_each_block$3(ctx) {
 			this.h();
 		},
 		h() {
-			attr(a, "class", "button svelte-vlyog6");
+			attr(a, "class", "button svelte-1k550y1");
 			attr(a, "href", a_href_value = /*button*/ ctx[3].link.url);
 		},
 		m(target, anchor) {
@@ -4851,9 +4851,9 @@ function create_each_block$3(ctx) {
 			append_hydration(a, t);
 		},
 		p(ctx, dirty) {
-			if (dirty & /*buttons*/ 4 && t_value !== (t_value = /*button*/ ctx[3].link.label + "")) set_data(t, t_value);
+			if (dirty & /*buttons*/ 2 && t_value !== (t_value = /*button*/ ctx[3].link.label + "")) set_data(t, t_value);
 
-			if (dirty & /*buttons*/ 4 && a_href_value !== (a_href_value = /*button*/ ctx[3].link.url)) {
+			if (dirty & /*buttons*/ 2 && a_href_value !== (a_href_value = /*button*/ ctx[3].link.url)) {
 				attr(a, "href", a_href_value);
 			}
 		},
@@ -4866,24 +4866,18 @@ function create_each_block$3(ctx) {
 function create_fragment$7(ctx) {
 	let div;
 	let header;
-	let h3;
+	let span;
 	let t0;
 	let t1;
-	let span;
-	let t2;
-	let t3;
-	let if_block = /*buttons*/ ctx[2].length > 0 && create_if_block$5(ctx);
+	let if_block = /*buttons*/ ctx[1].length > 0 && create_if_block$5(ctx);
 
 	return {
 		c() {
 			div = element("div");
 			header = element("header");
-			h3 = element("h3");
-			t0 = text(/*heading*/ ctx[0]);
-			t1 = space();
 			span = element("span");
-			t2 = text(/*subheading*/ ctx[1]);
-			t3 = space();
+			t0 = text(/*subheading*/ ctx[0]);
+			t1 = space();
 			if (if_block) if_block.c();
 			this.h();
 		},
@@ -4892,44 +4886,34 @@ function create_fragment$7(ctx) {
 			var div_nodes = children(div);
 			header = claim_element(div_nodes, "HEADER", { class: true });
 			var header_nodes = children(header);
-			h3 = claim_element(header_nodes, "H3", { class: true });
-			var h3_nodes = children(h3);
-			t0 = claim_text(h3_nodes, /*heading*/ ctx[0]);
-			h3_nodes.forEach(detach);
-			t1 = claim_space(header_nodes);
 			span = claim_element(header_nodes, "SPAN", { class: true });
 			var span_nodes = children(span);
-			t2 = claim_text(span_nodes, /*subheading*/ ctx[1]);
+			t0 = claim_text(span_nodes, /*subheading*/ ctx[0]);
 			span_nodes.forEach(detach);
-			t3 = claim_space(header_nodes);
+			t1 = claim_space(header_nodes);
 			if (if_block) if_block.l(header_nodes);
 			header_nodes.forEach(detach);
 			div_nodes.forEach(detach);
 			this.h();
 		},
 		h() {
-			attr(h3, "class", "heading svelte-vlyog6");
-			attr(span, "class", "subheading svelte-vlyog6");
-			attr(header, "class", "section-container svelte-vlyog6");
+			attr(span, "class", "");
+			attr(header, "class", "section-container svelte-1k550y1");
 			attr(div, "class", "section");
-			attr(div, "id", "section-d23a6a8c");
+			attr(div, "id", "section-ddc3ed15");
 		},
 		m(target, anchor) {
 			insert_hydration(target, div, anchor);
 			append_hydration(div, header);
-			append_hydration(header, h3);
-			append_hydration(h3, t0);
-			append_hydration(header, t1);
 			append_hydration(header, span);
-			append_hydration(span, t2);
-			append_hydration(header, t3);
+			append_hydration(span, t0);
+			append_hydration(header, t1);
 			if (if_block) if_block.m(header, null);
 		},
 		p(ctx, [dirty]) {
-			if (dirty & /*heading*/ 1) set_data(t0, /*heading*/ ctx[0]);
-			if (dirty & /*subheading*/ 2) set_data(t2, /*subheading*/ ctx[1]);
+			if (dirty & /*subheading*/ 1) set_data(t0, /*subheading*/ ctx[0]);
 
-			if (/*buttons*/ ctx[2].length > 0) {
+			if (/*buttons*/ ctx[1].length > 0) {
 				if (if_block) {
 					if_block.p(ctx, dirty);
 				} else {
@@ -4957,18 +4941,18 @@ function instance$6($$self, $$props, $$invalidate) {
 	let { buttons } = $$props;
 
 	$$self.$$set = $$props => {
-		if ('heading' in $$props) $$invalidate(0, heading = $$props.heading);
-		if ('subheading' in $$props) $$invalidate(1, subheading = $$props.subheading);
-		if ('buttons' in $$props) $$invalidate(2, buttons = $$props.buttons);
+		if ('heading' in $$props) $$invalidate(2, heading = $$props.heading);
+		if ('subheading' in $$props) $$invalidate(0, subheading = $$props.subheading);
+		if ('buttons' in $$props) $$invalidate(1, buttons = $$props.buttons);
 	};
 
-	return [heading, subheading, buttons];
+	return [subheading, buttons, heading];
 }
 
 class Component$7 extends SvelteComponent {
 	constructor(options) {
 		super();
-		init(this, options, instance$6, create_fragment$7, safe_not_equal, { heading: 0, subheading: 1, buttons: 2 });
+		init(this, options, instance$6, create_fragment$7, safe_not_equal, { heading: 2, subheading: 0, buttons: 1 });
 	}
 }
 
@@ -6032,9 +6016,34 @@ function create_fragment$a(ctx) {
 
 	component_6 = new Component$7({
 			props: {
-				heading: "",
-				subheading: "Learn MoreLearn MoreLearn MoreLearn MoreLearn More\n",
-				buttons: []
+				heading: "Web Development & Design Services",
+				subheading: "",
+				buttons: [
+					{
+						"link": { "url": "/", "label": "Intuition" }
+					},
+					{
+						"link": { "url": "/", "label": "Reason" }
+					},
+					{
+						"link": { "url": "/", "label": "UltraLearning" }
+					},
+					{
+						"link": { "url": "/", "label": "Insight" }
+					},
+					{
+						"link": {
+							"url": "/",
+							"label": "Personal Development"
+						}
+					},
+					{
+						"link": { "url": "/", "label": "Nutrition" }
+					},
+					{
+						"link": { "url": "/", "label": "Fitness" }
+					}
+				]
 			}
 		});
 
