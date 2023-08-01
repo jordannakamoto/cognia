@@ -4051,8 +4051,8 @@ function create_if_block$3(ctx) {
 		h() {
 			attr(img, "alt", img_alt_value = /*person*/ ctx[2].image.alt);
 			if (!src_url_equal(img.src, img_src_value = /*person*/ ctx[2].image.url)) attr(img, "src", img_src_value);
-			attr(img, "class", "svelte-15l3okr");
-			attr(figure, "class", "svelte-15l3okr");
+			attr(img, "class", "svelte-1maiqc");
+			attr(figure, "class", "svelte-1maiqc");
 		},
 		m(target, anchor) {
 			insert_hydration(target, figure, anchor);
@@ -4106,7 +4106,7 @@ function create_each_block_1$1(ctx) {
 		h() {
 			attr(a, "href", a_href_value = /*link*/ ctx[5].url);
 			attr(a, "aria-label", a_aria_label_value = /*link*/ ctx[5].label);
-			attr(a, "class", "svelte-15l3okr");
+			attr(a, "class", "svelte-1maiqc");
 		},
 		m(target, anchor) {
 			insert_hydration(target, a, anchor);
@@ -4228,12 +4228,12 @@ function create_each_block$2(ctx) {
 			this.h();
 		},
 		h() {
-			attr(span0, "class", "name svelte-15l3okr");
-			attr(span1, "class", "title svelte-15l3okr");
-			attr(div0, "class", "details svelte-15l3okr");
-			attr(div1, "class", "social svelte-15l3okr");
+			attr(span0, "class", "name svelte-1maiqc");
+			attr(span1, "class", "title svelte-1maiqc");
+			attr(div0, "class", "details svelte-1maiqc");
+			attr(div1, "class", "social svelte-1maiqc");
 			attr(div2, "class", "info");
-			attr(li, "class", "svelte-15l3okr");
+			attr(li, "class", "svelte-1maiqc");
 		},
 		m(target, anchor) {
 			insert_hydration(target, li, anchor);
@@ -4374,8 +4374,8 @@ function create_fragment$4(ctx) {
 			this.h();
 		},
 		h() {
-			attr(ul, "class", "cards svelte-15l3okr");
-			attr(section, "class", "section-container svelte-15l3okr");
+			attr(ul, "class", "cards svelte-1maiqc");
+			attr(section, "class", "section-container svelte-1maiqc");
 			attr(div, "class", "section");
 			attr(div, "id", "section-fef5b78f");
 		},
@@ -5987,6 +5987,26 @@ function create_fragment$a(ctx) {
 						},
 						"title": "",
 						"social_links": []
+					},
+					{
+						"name": "+ 1000 Micro-Courses",
+						"image": {
+							"alt": "",
+							"src": "https://raqslyrcsntqpaljvpvm.supabase.co/storage/v1/object/public/images/79acbd4e-ba55-4a39-a276-ccc2b92c6d4c/1690891101810Screenshot%202023-08-01%20at%204.58.16%20AM.png",
+							"url": "https://raqslyrcsntqpaljvpvm.supabase.co/storage/v1/object/public/images/79acbd4e-ba55-4a39-a276-ccc2b92c6d4c/1690891101810Screenshot%202023-08-01%20at%204.58.16%20AM.png",
+							"size": 117
+						},
+						"title": "",
+						"social_links": [
+							{
+								"icon": "Dolore sint ex",
+								"link": { "url": "/", "label": "id" }
+							},
+							{
+								"icon": "Tempor esse sit",
+								"link": { "url": "/", "label": "fugiat" }
+							}
+						]
 					}
 				]
 			}
