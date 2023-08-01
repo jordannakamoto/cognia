@@ -5926,18 +5926,16 @@ function create_fragment$8(ctx) {
 						"name": "Occam's Razor",
 						"image": {
 							"alt": "",
-							"url": "https://raqslyrcsntqpaljvpvm.supabase.co/storage/v1/object/public/images/79acbd4e-ba55-4a39-a276-ccc2b92c6d4c/DreamShaper_v7_Matte_Glass_Vector_Graphic_of_Mini_Course_icon_0.webp1690889462351"
+							"url": "https://raqslyrcsntqpaljvpvm.supabase.co/storage/v1/object/public/images/79acbd4e-ba55-4a39-a276-ccc2b92c6d4c/DreamShaper_v7_Matte_Glass_Vector_Graphic_of_Mini_Course_icon_1%20(1).jpg1690889585177"
 						},
 						"title": "",
 						"social_links": []
 					},
 					{
-						"name": "Pareto Principle (80/20 Rule)",
+						"name": "Pareto Principle (80/20)",
 						"image": {
 							"alt": "",
-							"src": "https://raqslyrcsntqpaljvpvm.supabase.co/storage/v1/object/public/images/79acbd4e-ba55-4a39-a276-ccc2b92c6d4c/1685963427937cover5_cleanup.png",
-							"url": "https://raqslyrcsntqpaljvpvm.supabase.co/storage/v1/object/public/images/79acbd4e-ba55-4a39-a276-ccc2b92c6d4c/1685963427937cover5_cleanup.png",
-							"size": 407
+							"url": "https://raqslyrcsntqpaljvpvm.supabase.co/storage/v1/object/public/images/79acbd4e-ba55-4a39-a276-ccc2b92c6d4c/DreamShaper_v7_Matte_Glass_Vector_Graphic_of_Mini_Course_icon_0.webp1690889462351"
 						},
 						"title": "",
 						"social_links": []
