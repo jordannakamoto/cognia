@@ -3786,7 +3786,7 @@ function get_each_context$1(ctx, list, i) {
 	return child_ctx;
 }
 
-// (54:2) {#if buttons.length > 0}
+// (55:2) {#if buttons.length > 0}
 function create_if_block$2(ctx) {
 	let div;
 	let each_value = /*buttons*/ ctx[2];
@@ -3818,7 +3818,7 @@ function create_if_block$2(ctx) {
 			this.h();
 		},
 		h() {
-			attr(div, "class", "buttons svelte-1ney8yj");
+			attr(div, "class", "buttons svelte-vlyog6");
 		},
 		m(target, anchor) {
 			insert_hydration(target, div, anchor);
@@ -3860,7 +3860,7 @@ function create_if_block$2(ctx) {
 	};
 }
 
-// (56:6) {#each buttons as button, i}
+// (57:6) {#each buttons as button, i}
 function create_each_block$1(ctx) {
 	let a;
 	let t_value = /*button*/ ctx[3].link.label + "";
@@ -3881,7 +3881,7 @@ function create_each_block$1(ctx) {
 			this.h();
 		},
 		h() {
-			attr(a, "class", "button svelte-1ney8yj");
+			attr(a, "class", "button svelte-vlyog6");
 			attr(a, "href", a_href_value = /*button*/ ctx[3].link.url);
 		},
 		m(target, anchor) {
@@ -3946,9 +3946,9 @@ function create_fragment$3(ctx) {
 			this.h();
 		},
 		h() {
-			attr(h3, "class", "heading svelte-1ney8yj");
-			attr(span, "class", "subheading svelte-1ney8yj");
-			attr(header, "class", "section-container svelte-1ney8yj");
+			attr(h3, "class", "heading svelte-vlyog6");
+			attr(span, "class", "subheading svelte-vlyog6");
+			attr(header, "class", "section-container svelte-vlyog6");
 			attr(div, "class", "section");
 			attr(div, "id", "section-37482e3c");
 		},
@@ -5890,8 +5890,8 @@ function create_fragment$8(ctx) {
 
 	component_2 = new Component$3({
 			props: {
-				heading: "+Mind Skills",
-				subheading: "Pick up the insights and tools of today's best thinkers in no time.\n\nCognia's micro courses help you master your mind in areas of productivity, learning, creativity, life design, emotional intelligence, and more.\n\n",
+				heading: "Mind Skills",
+				subheading: "Pick up the insights and tools of today's best thinkers in no time. Unlike books, podcasts, or classes: Cognia's micro-course academy lets you mix and match the best ideas to master your mind.",
 				buttons: [
 					{
 						"link": { "url": "/", "label": "Sign Up Free" }
@@ -6054,7 +6054,7 @@ function create_fragment$8(ctx) {
 							"numerator": "Inquire",
 							"denominator": ""
 						},
-						"title": "Elite",
+						"title": "Organization",
 						"features": [
 							{
 								"icon": "mdi:check",
@@ -6066,8 +6066,8 @@ function create_fragment$8(ctx) {
 							}
 						],
 						"description": {
-							"html": "<p>Our coaches in your pocket for live mentorships and a custom plan for your project or business.</p>",
-							"markdown": "Our coaches in your pocket for live mentorships and a custom plan for your project or business."
+							"html": "<p>Our coaches in your pocket for live mentorships and a creating a customized learning course for your team.</p>",
+							"markdown": "Our coaches in your pocket for live mentorships and a creating a customized learning course for your team."
 						}
 					}
 				]
