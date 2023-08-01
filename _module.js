@@ -5908,9 +5908,7 @@ function create_fragment$8(ctx) {
 						"name": "Growth Mindset",
 						"image": {
 							"alt": "",
-							"src": "https://raqslyrcsntqpaljvpvm.supabase.co/storage/v1/object/public/images/79acbd4e-ba55-4a39-a276-ccc2b92c6d4c/1685702198481asdgasdg.png",
-							"url": "https://raqslyrcsntqpaljvpvm.supabase.co/storage/v1/object/public/images/79acbd4e-ba55-4a39-a276-ccc2b92c6d4c/1685702198481asdgasdg.png",
-							"size": 307
+							"url": "https://raqslyrcsntqpaljvpvm.supabase.co/storage/v1/object/public/images/79acbd4e-ba55-4a39-a276-ccc2b92c6d4c/DreamShaper_v7_Matte_Glass_Vector_Graphic_of_Mini_Course_icon_1.jpg1690889155829"
 						},
 						"title": "",
 						"social_links": []
