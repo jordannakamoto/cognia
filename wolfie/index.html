@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="generator" content="Primo" />
+    <!-- HEAD_svelte-du3lun_START -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url("https://unpkg.com/@primo-app/primo@1.3.64/reset.css");
+
+        #page {
+            font-family: system-ui, sans-serif;
+            color: var(--color);
+            line-height: 1.6;
+            font-size: 1rem;
+            background: var(--background);
+        }
+
+        .section-container {
+            max-width: var(--max-width, 1000px);
+            margin: 0 auto;
+            padding: 3rem var(--padding, 1rem);
+        }
+
+        .heading {
+            font-size: 3rem;
+            line-height: 1;
+            font-weight: 700;
+            margin: 0;
+        }
+
+        .button {
+            color: white;
+            background: var(--color-accent);
+            border-radius: 5px;
+            padding: 8px 20px;
+            transition: var(--transition);
+        }
+
+        .button:hover {
+            box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .button.inverted {
+            background: transparent;
+            color: var(--color-accent);
+            border: 2px solid var(--color-accent);
+        }
+    </style><!-- HEAD_svelte-du3lun_END -->
+    <style>
+        section.svelte-18kvmbo.svelte-18kvmbo {
+            background: var(--color-brand);
+            overflow: hidden
+        }
+
+        section.image-left.svelte-18kvmbo figure.svelte-18kvmbo {
+            grid-column: 1;
+            grid-row: 1
+        }
+
+        section.image-left.svelte-18kvmbo .body.svelte-18kvmbo {
+            grid-column: 2
+        }
+
+        .section-container.svelte-18kvmbo.svelte-18kvmbo {
+            display: flex;
+            flex-direction: column-reverse;
+            gap: 2rem
+        }
+
+        @media(min-width: 800px) {
+            .section-container.svelte-18kvmbo.svelte-18kvmbo {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                place-items: center;
+                gap: 6rem;
+                padding-block: 6rem
+            }
+        }
+
+        .body.svelte-18kvmbo.svelte-18kvmbo {
+            color: var(--color-inverted);
+            display: grid;
+            place-items: start;
+            padding-top: 2rem
+        }
+
+        .body.svelte-18kvmbo .headline.svelte-18kvmbo {
+            font-family: var(--font-heading);
+            font-weight: 700;
+            font-size: clamp(2.75rem, 10vw, 3rem);
+            line-height: 1.1;
+            margin-bottom: 1.5rem
+        }
+
+        .body.svelte-18kvmbo .subheading.svelte-18kvmbo {
+            font-weight: 400;
+            font-size: 1.125rem;
+            line-height: 1.5;
+            margin-bottom: 2rem
+        }
+
+        .body.svelte-18kvmbo .button.svelte-18kvmbo {
+            font-weight: 500
+        }
+
+        figure.svelte-18kvmbo.svelte-18kvmbo {
+            position: relative
+        }
+
+        figure.svelte-18kvmbo img.svelte-18kvmbo {
+            border-radius: var(--border-radius);
+            z-index: 1;
+            position: relative;
+            width: 40%
+        }
+
+        .section-container.svelte-7037ku {
+            max-width: var(--inner-max-width, 800px);
+            padding: 4rem 2rem
+        }
+
+        .content.svelte-7037ku img {
+            width: 100%;
+            margin: 2rem 0;
+            box-shadow: var(--box-shadow);
+            border-radius: var(--border-radius)
+        }
+
+        .content.svelte-7037ku p {
+            padding: 0.25rem 0;
+            line-height: 1.5;
+            font-family: var(--body-font);
+            font-weight: 400;
+            margin-bottom: 1rem;
+            color: #2d3339
+        }
+
+        .content.svelte-7037ku a {
+            text-decoration: underline
+        }
+
+        .content.svelte-7037ku h1 {
+            font-size: clamp(1.75rem, 10vw, 2.25rem);
+            font-weight: 600;
+            letter-spacing: -0.08rem;
+            margin-bottom: 1rem;
+            line-height: 1.1
+        }
+
+        .content.svelte-7037ku h2 {
+            font-size: clamp(1.5rem, 10vw, 2.125rem);
+            font-weight: 600;
+            margin-bottom: 1rem;
+            letter-spacing: -0.06rem;
+            line-height: 1.1
+        }
+
+        .content.svelte-7037ku h3 {
+            font-size: clamp(1.25rem, 10vw, 1.75rem);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.05rem;
+            line-height: 1.1
+        }
+
+        .content.svelte-7037ku ul {
+            list-style: disc;
+            padding: 0.25rem 0;
+            padding-left: 1.25rem
+        }
+
+        .content.svelte-7037ku ol {
+            list-style: decimal;
+            padding-left: 1.25rem;
+            margin-bottom: 2rem
+        }
+
+        .content.svelte-7037ku blockquote {
+            padding: 2rem;
+            box-shadow: var(--box-shadow);
+            border-radius: var(--border-radius)
+        }
+
+        .section-container.svelte-o9z257.svelte-o9z257 {
+            display: grid;
+            justify-content: center
+        }
+
+        .card.svelte-o9z257.svelte-o9z257 {
+            padding: 4rem clamp(2rem, 10vw, 7rem);
+            border: 1px solid var(--border-color, #eee);
+            border-radius: var(--border-radius);
+            text-align: center;
+            display: grid
+        }
+
+        .heading.svelte-o9z257.svelte-o9z257 {
+            margin-bottom: 1.5rem
+        }
+
+        .body.svelte-o9z257.svelte-o9z257 {
+            max-width: 700px;
+            margin-bottom: 2.25rem
+        }
+
+        .buttons.svelte-o9z257.svelte-o9z257 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem
+        }
+
+        .buttons.svelte-o9z257 .button.svelte-o9z257 {
+            display: flex;
+            align-items: center;
+            gap: 0.25rem
+        }
+    </style>
+</head>
+
+<body id="page">
+
+    <div class="section" id="section-a84b2e0f">
+        <section class="svelte-18kvmbo">
+            <div class="section-container svelte-18kvmbo">
+                <div class="body svelte-18kvmbo">
+                    <h1 class="headline svelte-18kvmbo">WolfieAI</h1>
+                    <div class="subheading svelte-18kvmbo">Your Team's DevOps Assistant</div>
+                    <a href="/" class="button svelte-18kvmbo">Get Started</a>
+                </div>
+                <figure class="svelte-18kvmbo"><img src="https://raqslyrcsntqpaljvpvm.supabase.co/storage/v1/object/public/images/79acbd4e-ba55-4a39-a276-ccc2b92c6d4c/wolfie.jpeg1690965404437" alt="" class="svelte-18kvmbo"></figure>
+            </div>
+        </section>
+    </div>
+    <div class="section" id="section-b686d410">
+        <div class="section">
+            <div class="section-container content svelte-7037ku"><!-- HTML_TAG_START -->
+                <p>What <strong>Wolfie</strong> Does:</p>
+                <p>Process: Store and send templates to chatGPT API and allow user to edit the response.</p>
+                <h3><strong>Features</strong></h3>
+                <p><strong>API</strong></p>
+                <p>Query Generator (generate, in this template -&gt; api routes and requests for [these datas])</p>
+                <p></p>
+                <p><strong>Task Manager</strong></p>
+                <p>Send notifications to you about completing tasks or checking some part of the project on some sort of schedule.</p>
+                <p></p>
+                <p><strong>Fetching Performance</strong></p>
+                <p>It could fetch logs, code commits, performance metrics, or any other data your team needs into temporary collections.</p>
+                <p></p>
+                <p><strong>Guard the System</strong></p>
+                <p>Keep a collection of security threats or performance issues.</p>
+                <p></p>
+                <p><strong>Track and Find</strong></p>
+                <p>Have some library of code optimization tools or developer tools to review files.</p>
+                <p></p>
+                <p><strong>Guide the Way</strong></p>
+                <p>Just like guide dogs help their owners navigate, Wolfie could guide new team members through your DevOps processes, helping them get up to speed quickly.</p>
+                <p></p>
+                <p><strong>Keep the Pack Together</strong></p>
+                <p>Dogs are pack animals and work well in teams. Wolfie could help coordinate tasks among your team members, ensuring everyone is working together efficiently.</p>
+                <p></p>
+                <p>---&gt; estimate what each team member is working on: write documentation, and prepare team-wide documentation by synthesizing individual documentation.</p><!-- HTML_TAG_END -->
+            </div>
+        </div>
+    </div>
+    <div class="section" id="section-d7e738ff">
+        <section class="section-container svelte-o9z257">
+            <div class="card svelte-o9z257">
+                <h2 class="heading svelte-o9z257"></h2>
+                <div class="body svelte-o9z257"><!-- HTML_TAG_START -->
+                    <h1>How to develop Feature List:<br>Observe and collect our programming patterns to acquire a templating vision.</h1><!-- HTML_TAG_END -->
+                </div>
+                <div class="buttons svelte-o9z257"><a class="button svelte-o9z257" href="/">
+                        <span>Watch video</span>
+                    </a><a class="button svelte-o9z257" href="/">
+                        <span>Contact Us</span>
+                    </a></div>
+            </div>
+        </section>
+    </div>
+
+    <script type="module">
+        const path = window.location.pathname === '/' ? '' : window.location.pathname
+        const [{
+            default: App
+        }] = await Promise.all([
+            import(path + '/_module.js')
+        ]).catch(e => console.error(e))
+        new App({
+            target: document.querySelector('body'),
+            hydrate: true,
+        })
+    </script>
+</body>
+
+</html>
