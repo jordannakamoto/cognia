@@ -3789,7 +3789,7 @@ function get_each_context$1(ctx, list, i) {
 	return child_ctx;
 }
 
-// (55:2) {#if buttons.length > 0}
+// (61:2) {#if buttons.length > 0}
 function create_if_block$2(ctx) {
 	let div;
 	let each_value = /*buttons*/ ctx[2];
@@ -3821,7 +3821,7 @@ function create_if_block$2(ctx) {
 			this.h();
 		},
 		h() {
-			attr(div, "class", "buttons svelte-vlyog6");
+			attr(div, "class", "buttons svelte-nvvwnu");
 		},
 		m(target, anchor) {
 			insert_hydration(target, div, anchor);
@@ -3863,7 +3863,7 @@ function create_if_block$2(ctx) {
 	};
 }
 
-// (57:6) {#each buttons as button, i}
+// (63:6) {#each buttons as button, i}
 function create_each_block$1(ctx) {
 	let a;
 	let t_value = /*button*/ ctx[3].link.label + "";
@@ -3884,7 +3884,7 @@ function create_each_block$1(ctx) {
 			this.h();
 		},
 		h() {
-			attr(a, "class", "button svelte-vlyog6");
+			attr(a, "class", "button svelte-nvvwnu");
 			attr(a, "href", a_href_value = /*button*/ ctx[3].link.url);
 		},
 		m(target, anchor) {
@@ -3949,9 +3949,9 @@ function create_fragment$3(ctx) {
 			this.h();
 		},
 		h() {
-			attr(h3, "class", "heading svelte-vlyog6");
-			attr(span, "class", "subheading svelte-vlyog6");
-			attr(header, "class", "section-container svelte-vlyog6");
+			attr(h3, "class", "heading svelte-nvvwnu");
+			attr(span, "class", "subheading svelte-nvvwnu");
+			attr(header, "class", "section-container svelte-nvvwnu");
 			attr(div, "class", "section");
 			attr(div, "id", "section-37482e3c");
 		},
@@ -5939,10 +5939,13 @@ function create_fragment$a(ctx) {
 	component_2 = new Component$3({
 			props: {
 				heading: "Mind Skills",
-				subheading: "Pick up the insights and tools of today's best thinkers in no time. Unlike books, podcasts, or classes: Cognia's micro-course academy lets you mix and match the best ideas to master your mind.",
+				subheading: "Accelerate your learning. Pick up the insights and tools of today's best thinkers in no time: Cognia's micro-course academy lets you mix and match the best ideas to master your mind.",
 				buttons: [
 					{
 						"link": { "url": "/", "label": "Sign Up Free" }
+					},
+					{
+						"link": { "url": "/", "label": "▶️ Watch Intro" }
 					}
 				]
 			}
