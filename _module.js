@@ -6028,7 +6028,10 @@ function create_fragment$b(ctx) {
 				subheading: "Accelerate your learning. Pick up the insights and tools of today's best thinkers in no time: Cognia's micro-course academy lets you mix and match the best ideas to master your mind.",
 				buttons: [
 					{
-						"link": { "url": "/", "label": "Sign Up Free" }
+						"link": {
+							"url": "https://airtable.com/app94v9wp0D8qAImn/pagq8w3Ji48Wlhydq?vROT1=recmkJGbbYA1d1VB9",
+							"label": "Sign Up Free"
+						}
 					},
 					{
 						"link": { "url": "/", "label": "▶️ Watch Intro" }
