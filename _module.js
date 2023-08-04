@@ -6024,7 +6024,7 @@ function create_fragment$b(ctx) {
 
 	component_2 = new Component$3({
 			props: {
-				heading: "Mind Skills",
+				heading: "Mindset^",
 				subheading: "Accelerate your learning. Pick up the insights and tools of today's best thinkers in no time: Cognia's micro-course academy lets you mix and match the best ideas to master your mind.",
 				buttons: [
 					{
